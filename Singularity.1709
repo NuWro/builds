@@ -31,7 +31,6 @@ NuWro 17.09
         git \
         graphviz-dev \
         libavahi-compat-libdnssd-dev \
-        libcfitsio-dev \
         libfftw3-dev \
         libftgl-dev \
         libglew1.5-dev \
