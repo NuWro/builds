@@ -54,7 +54,7 @@ NuWro 17.09
     rm -rf /var/lib/apt/lists/*
 
     # create g77 symbolic link for pythia installer
-    ls -s /usr/bin/gfortran /usr/bin/g77
+    ls -s /usr/bin/g77 /usr/bin/gfortran
     
     ##### INSTALL ROOT with PYTHIA #####
     
