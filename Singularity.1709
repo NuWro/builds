@@ -74,7 +74,7 @@ NuWro 17.09
     rm -rf pythia6
 
     # compile ROOT
-    cd root && ./configure --with-pythia6-libdir=lib
+    cd root && ./configure --with-pythia6-libdir=lib --enable-builtin-freetype
     make
 
     ##### INSTALL NuWro #####
