@@ -1,1 +1,1 @@
-# singularity
+# NuWro Singularity recipes
