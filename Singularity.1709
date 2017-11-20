@@ -83,6 +83,8 @@ NuWro 17.09
 
     ##### INSTALL NuWro #####
 
+    cd /opt/
+
     # to avoid "Problem with the SSL CA cert (path? access rights?)"
     update-ca-certificates
     git clone -b nuwro_17.09 --depth 1 https://github.com/NuWro/nuwro.git
