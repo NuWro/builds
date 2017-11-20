@@ -77,6 +77,10 @@ NuWro 17.09
     cd root && ./configure --with-pythia6-libdir=lib --enable-builtin-freetype
     make
 
+    export ROOTSYS=/opt/root/
+    export PATH=$PATH:$ROOTSYS/bin/
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib/
+
     ##### INSTALL NuWro #####
 
     # to avoid "Problem with the SSL CA cert (path? access rights?)"
