@@ -92,4 +92,4 @@ NuWro 17.09
     make
 
 %runscript
-    exec /opt/nuwro/bin/nuwro
+    exec /opt/nuwro/bin/nuwro "$@"
