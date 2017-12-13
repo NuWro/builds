@@ -4,9 +4,6 @@
 BootStrap: docker
 From: ubuntu:14.04
 
-%help
-Ubuntu + ROOT 5 + Pythia 6 -> base for NuWro builds
-
 %labels
 Maintainer tomasz.golan@gmail.com
 OS Ubuntu14.04
