@@ -7,15 +7,7 @@ From: NuWro/builds:root5
 See NuWro User Guide at https://nuwro.github.io/user-guide/
 
 %labels
-Maintainer tomasz.golan@gmail.com
-OS Ubuntu14.04
-ROOT 5.34/36
 NuWro 17.09
-
-%environment
-    export ROOTSYS=/opt/root/
-    export PATH=$PATH:$ROOTSYS/bin/:/opt/nuwro/bin/
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib/
 
 %post
     export ROOTSYS=/opt/root/
