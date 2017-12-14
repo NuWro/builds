@@ -14,10 +14,10 @@ For more information about Singularity please visit [Singularity Used Guide](htt
 $ singularity pull shub://NuWro/builds:[tag]
 ```
 
-where `tag = YYMM` (please make sure capitalization is correct - it is case sensitive), e.g. 
+where `tag = YY.MM` (please make sure capitalization is correct - it is case sensitive), e.g. 
 
 ```
-$ singularity pull shub://NuWro/builds:1709
+$ singularity pull shub://NuWro/builds:17.09
 ```
 
 * Downloaded image (by default) has the following name:
@@ -29,17 +29,17 @@ $ singularity pull shub://NuWro/builds:1709
 e.g., 
 
 ```
-NuWro-builds-master-1709.simg
+NuWro-builds-master-17.09.simg
 ```
 
 * Information about software versions installed in a container is stores in its metadata. To check it use `inspect`, e.g.
 
 ```
-$ singularity inspect NuWro-builds-master-1709.simg 
+$ singularity inspect NuWro-builds-master-17.09.simg 
 {
     "MAINTAINER": "tomasz.golan@gmail.com",
     "NUWRO": "17.09",
-    "ROOT": "5.99/06",
+    "ROOT": "5.34/36",
     "OS": "Ubuntu14.04",
     ...
 }
@@ -49,13 +49,13 @@ $ singularity inspect NuWro-builds-master-1709.simg
 * Any application can be executed from a container using `exec`, e.g.
 
 ```
-$ singularity exec NuWro-builds-master-1709.simg nuwro
+$ singularity exec NuWro-builds-master-17.09.simg nuwro
 ```
 
 or
 
 ```
-$ singularity exec NuWro-builds-master-1709.simg myroot 
+$ singularity exec NuWro-builds-master-17.09.simg myroot 
 ```
 
 * NuWro containers are set up to run NuWro, by default:
@@ -68,6 +68,10 @@ or
 
 ```
 ./[img file]
-````
+```
 
-are equivalent to `singularity exec [img file] nuwro`.
+are equivalent to `singularity exec [img file] nuwro`, e.g.
+
+```
+./NuWro-builds-master-17.09.simg -p "beam_energy = 1234"
+```
