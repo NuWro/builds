@@ -42,6 +42,7 @@ ROOT 5.34/36
         libxext-dev \
         libxft-dev \
         libxml2-dev \
+	libxml2-utils \
         libxpm-dev \
         python-dev \
         xlibmesa-glu-dev \
